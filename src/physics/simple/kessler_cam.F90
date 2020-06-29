@@ -70,7 +70,7 @@ contains
     ! Initialize Kessler with CAM physical constants
 
       if (errflg == 0) then
-         call kessler_init(cpair, latvap, pstd, rhoh2o, errmsg, errflg)
+         call kessler_init(cpair, latvap, pstd, rair, rhoh2o, errmsg, errflg)
          if (errflg /=0) then
             call endrun('kessler_cam_init error: Error returned from kessler_init: '//trim(errmsg))
          end if
